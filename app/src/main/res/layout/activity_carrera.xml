@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Carrera">
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="163dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="40dp"
+        android:text="Gafas Cristal"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/salir"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/Regresar"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="Regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageView
+        android:id="@+id/imagecarrera"
+        android:layout_width="208dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/imagencarrera" />
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/carrera3"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/carrera3" />
+
+            <ImageButton
+                android:id="@+id/carrera2"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/carrera2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/carrera1"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/carrera1" />
+
+            <ImageButton
+                android:id="@+id/carrera4"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/carrera4" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/carrera6"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/carrera6" />
+
+            <ImageButton
+                android:id="@+id/carrera5"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/carrera5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

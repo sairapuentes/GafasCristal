@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaCoste">
+
+    <ImageButton
+        android:id="@+id/Regresar"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="Regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/titulo3"
+        android:layout_width="163dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="40dp"
+        android:text="Gafas Cristal"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/salir"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/imagenlacoste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/imagenlacoste" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="267dp" />
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/lacoste1"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/lacoste1" />
+
+            <ImageButton
+                android:id="@+id/lacoste2"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/lacoste2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/lacoste4"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/lacoste4" />
+
+            <ImageButton
+                android:id="@+id/lacoste5"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/lacoste5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/lacoste3"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/lacoste3" />
+
+            <ImageButton
+                android:id="@+id/lacoste6"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/lacoste6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

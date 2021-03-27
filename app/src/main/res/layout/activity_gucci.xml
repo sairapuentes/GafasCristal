@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gucci">
+
+    <ImageButton
+        android:id="@+id/Regresar"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="Regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/titulo4"
+        android:layout_width="174dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="40dp"
+        android:text="Gafas Cristal"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/salir"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/imagengucci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/imagengucci" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="267dp" />
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/gucci1"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/gucci1" />
+
+            <ImageButton
+                android:id="@+id/gucci2"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/gucci2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/gucci3"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/gucci3" />
+
+            <ImageButton
+                android:id="@+id/gucci4"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/gucci4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/gucci6"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/gucci6" />
+
+            <ImageButton
+                android:id="@+id/gucci7"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/gucci7" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

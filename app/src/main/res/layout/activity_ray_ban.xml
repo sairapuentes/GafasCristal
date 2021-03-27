@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RayBan">
+
+    <ImageButton
+        android:id="@+id/Regresar"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="Regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageButton
+        android:id="@+id/salir"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/titulo1"
+        android:layout_width="163dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="40dp"
+        android:text="Gafas Cristal"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagerayban"
+        android:layout_width="165dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/imagenrayban" />
+
+    <TableLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/raybanavi"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                android:onClick="gafa1"
+                app:srcCompat="@mipmap/raybanaviator" />
+
+            <ImageButton
+                android:id="@+id/rayban2"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/rayban2" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/rayban1"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/rayban1" />
+
+            <ImageButton
+                android:id="@+id/rayban3"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/rayban3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/rayban4"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/rayban4" />
+
+            <ImageButton
+                android:id="@+id/raybangato"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#ffffff"
+                app:srcCompat="@mipmap/raybangato" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
